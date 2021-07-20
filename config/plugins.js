@@ -1,4 +1,4 @@
-module.exports = ({ env })=>({
+/* module.exports = ({ env })=>({
     upload: {
         provider: 'cloudinary',
         providerOptions: {
@@ -7,4 +7,4 @@ module.exports = ({ env })=>({
             api_secret: env('CLOUDINARY_SECRET'),
         },
     },
-});
+}); */
