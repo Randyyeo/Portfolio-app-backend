@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/sports-achievements",
+      "handler": "sports-achievements.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sports-achievements/count",
+      "handler": "sports-achievements.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/sports-achievements/:id",
+      "handler": "sports-achievements.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/sports-achievements",
+      "handler": "sports-achievements.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/sports-achievements/:id",
+      "handler": "sports-achievements.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/sports-achievements/:id",
+      "handler": "sports-achievements.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports_achievements",
+  "info": {
+    "name": "sports_achievements",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "education": {
+      "via": "sports_achievements",
+      "model": "educations"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/academic-achievements",
+      "handler": "academic-achievements.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academic-achievements/count",
+      "handler": "academic-achievements.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/academic-achievements/:id",
+      "handler": "academic-achievements.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/academic-achievements",
+      "handler": "academic-achievements.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/academic-achievements/:id",
+      "handler": "academic-achievements.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/academic-achievements/:id",
+      "handler": "academic-achievements.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

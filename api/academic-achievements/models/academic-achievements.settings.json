@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "academic_achievements",
+  "info": {
+    "name": "academic_achievements",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "education": {
+      "via": "academic_achievements",
+      "model": "educations"
+    }
+  }
+}

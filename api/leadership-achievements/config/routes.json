@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/leadership-achievements",
+      "handler": "leadership-achievements.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leadership-achievements/count",
+      "handler": "leadership-achievements.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/leadership-achievements/:id",
+      "handler": "leadership-achievements.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/leadership-achievements",
+      "handler": "leadership-achievements.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/leadership-achievements/:id",
+      "handler": "leadership-achievements.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/leadership-achievements/:id",
+      "handler": "leadership-achievements.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leadership_achievements",
+  "info": {
+    "name": "leadership_achievements",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "year": {
+      "type": "integer"
+    },
+    "education": {
+      "via": "leadership_achievements",
+      "model": "educations"
+    }
+  }
+}
