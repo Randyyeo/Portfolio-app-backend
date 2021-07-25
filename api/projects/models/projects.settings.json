@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "frontend": {
+      "type": "string"
+    },
+    "backend": {
+      "type": "string"
+    },
+    "languages": {
+      "collection": "languages",
+      "via": "projects",
+      "dominant": true
+    },
+    "dialog": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
