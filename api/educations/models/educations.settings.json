@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "educations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "year_start": {
+      "type": "integer"
+    },
+    "year_end": {
+      "type": "integer"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "sports_achievements": {
+      "via": "education",
+      "collection": "sports-achievements"
+    },
+    "academic_achievements": {
+      "via": "education",
+      "collection": "academic-achievements"
+    },
+    "leadership_achievements": {
+      "via": "education",
+      "collection": "leadership-achievements"
+    },
+    "dialog": {
+      "type": "boolean"
+    }
+  }
+}
